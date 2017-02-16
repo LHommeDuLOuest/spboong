@@ -69,7 +69,7 @@
 	</developers>
 
 	<properties>
-	    <java.version>1.8</java.version>
+		<java.version>1.8</java.version>
 		<app.log.root.level>WARN</app.log.root.level>
 		<env>local</env>
 		<maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -81,12 +81,12 @@
 
 	<dependencyManagement>
 		<dependencies>
-		    <dependency>
-		        <groupId>junit</groupId>
-		        <artifactId>junit</artifactId>
-		        <scope>test</scope>
-		        <version>${junit.version}</version>
-		    </dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<scope>test</scope>
+				<version>${junit.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
@@ -121,6 +121,10 @@
 						<source>${java.version}</source>
 						<target>${java.version}</target>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
 				</plugin>
 			</plugins>
 		</pluginManagement>
