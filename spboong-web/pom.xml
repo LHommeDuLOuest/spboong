@@ -1,32 +1,36 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
- 
-  <parent>
-    <groupId>com.ima.proj</groupId>
-    <artifactId>spboong-parent</artifactId>
-    <version>0.0.1.RELEASE</version>
-  </parent>
-  
-  <modelVersion>4.0.0</modelVersion>
-  <artifactId>spboong-web</artifactId>
-  <packaging>war</packaging>
-  
-  <name>spboong-web Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  
-  <build>
-    <finalName>spboong-web</finalName>
-  </build>
-  
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<parent>
+		<groupId>com.ima.proj</groupId>
+		<artifactId>spboong-parent</artifactId>
+		<version>0.0.1.RELEASE</version>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>spboong-web</artifactId>
+	<packaging>war</packaging>
+
+	<name>spboong-web Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>angularjs</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>spboong-web</finalName>
+	</build>
+
 </project>
