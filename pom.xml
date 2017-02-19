@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<parent>
+	<!--parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.1.RELEASE</version>
-	</parent>
+	</parent-->
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ima.proj</groupId>
@@ -77,6 +77,7 @@
 		<log4j.version>1.2.17</log4j.version>
 		<org.slf4j.version>1.7.6</org.slf4j.version>
 		<junit.version>4.12</junit.version>
+		<spring.boot.version>1.5.1.RELEASE</spring.boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -90,22 +91,33 @@
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
 				<scope>test</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-data-jpa</artifactId>
+				<version>${spring.boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

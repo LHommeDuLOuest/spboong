@@ -7,11 +7,15 @@
 		<groupId>com.ima.proj</groupId>
 		<artifactId>spboong-parent</artifactId>
 		<version>0.0.1.RELEASE</version>
+		<relativePath>../</relativePath>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>spboong-web</artifactId>
 	<packaging>war</packaging>
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 
 	<name>spboong-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
@@ -27,10 +31,25 @@
 			<artifactId>angularjs</artifactId>
 			<version>1.6.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>spboong-web</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<server>TomcatServer</server>
+					<path>/spboong</path>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 </project>
