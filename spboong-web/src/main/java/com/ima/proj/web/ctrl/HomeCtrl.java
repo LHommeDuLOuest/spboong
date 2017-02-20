@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * 
- * @author lyes ⴿⴻⵔⴱⵉⵛ
+ * @author LYES K ⴿⴻⵔⴱⵉⵛ
  *
  */
 @RestController
